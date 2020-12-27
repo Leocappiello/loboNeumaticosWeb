@@ -19,10 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-    </style> 
-
     <!-- Icons F.A -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -32,7 +28,7 @@
 
     <!-- Header Navbar-->
 
-    <div>
+    <div id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">        
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">                
@@ -44,7 +40,7 @@
 
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" id="home" href="/index.html">Home</a>
-                    <a class="nav-item nav-link" href="/ofertas.html">Ofertas</a>
+                    <a class="nav-item nav-link disabled" id="ofertas">Ofertas</a>
                     <a class="nav-item nav-link" href="#central">Contacto</a>
                     <a class="nav-item nav-link" href="#centraldos">Horarios</a>
                     <a class="nav-item nav-link" href="https://www.instagram.com/loboneumaticos/?hl=es-la"><i class="fab fa-instagram"></i></a>
@@ -179,7 +175,7 @@
                     </ul>
 
                     <div class="card-body" style="border-radius: 1%;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26944.42198581161!2d-63.22820300653513!3d-32.417745122958294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc4333e0c0e44d%3A0x24cc4e5a99c7235f!2sLobo%20Neumaticos!5e0!3m2!1ses-419!2sar!4v1608845325836!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26944.42198581161!2d-63.22820300653513!3d-32.417745122958294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc4333e0c0e44d%3A0x24cc4e5a99c7235f!2sLobo%20Neumaticos!5e0!3m2!1ses-419!2sar!4v1608845325836!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
             </div>
         </div>
@@ -208,9 +204,9 @@
 
     <div id="centraldos">
         <div class="containerFluid" style="width: 100%; height: 500px">
-            <div class="card cardCentral" style="width: 60%; height: 70%; padding-top:50px; ">
+            <div class="card cardCentral" style="width: 60%; height: 65%; padding-top:50px; ">
                 <div id="subtitulodos">Podes encontrarnos</b></div>
-                <ul class="list-group list-group-flush">
+                <ul id="horarioLista" class="list-group list-group-flush">
                     <li class="list-group-item"><b>Lunes a viernes:</b></i>8:00 a 12:00 hs y 16:00 a 19:00hs</li>
                     <li class="list-group-item"><b style="margin-right: 60px;">Sábados:</b>8:00 a 12:00 hs</li>
                     <li class="list-group-item"></li>

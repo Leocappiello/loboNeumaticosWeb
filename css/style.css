@@ -29,8 +29,8 @@ html{
 
 #header{
     width: 100%;
-    margin-bottom: 10px;
-    padding: 20px 0 0 40px;
+    padding: 20px 0 10px 40px;
+    background-color: #F8F9FA;
 }
 
 #logo{
@@ -97,12 +97,10 @@ html{
     padding: 0;
     height: 400px;
     width: 400px;
-    background-color: #343636;
     border-radius: 50%;
     position: absolute;
-    left: calc(50% - 200px);
-
-    top: 420px;
+    left: calc(50% - 370px);
+    top: 600px;
     z-index: -2;
 }
 
@@ -142,6 +140,9 @@ html{
     border-radius: 1%;
 }
 
+#ofertas:hover{
+    color:green !important;
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -184,7 +185,6 @@ b {
     padding: 20px 0 20px  0;
 }
 #subtitulodos{
-    padding-top: 30px;
     font-weight: bold;
     font-size: 30px;
 }
@@ -203,4 +203,51 @@ b {
 
 #promos li img{
     height: 80px;
+}
+
+
+@media (max-width: 720px) {
+    .rueda{
+        height: 10%;
+        top: 850px;
+        margin-left: 15px;
+    }
+    
+    #type{font-size: 40px;}
+    #mapa{
+        max-width: 100%;
+        min-height: 300px;
+        height: auto;
+    }           
+    #decorator{height: 40px; padding-top: 2px;}
+    #decorator p{ font-size: 11px; }
+    .subtitulo{font-size: 17px; padding: 30px 0 10px 0;}
+    .cardCentral{margin:auto;width: 80%;} 
+    #marcas img{
+        padding:0;
+        margin: 0;
+        width: 90px;
+        margin: 10px;
+    }
+
+    #subtitulodos{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #horarioLista{font-size: 17px;} 
+    #promos{
+        width: auto;
+    }
+    #promos img{width: 65%;height: 55% !important;}
+}
+
+@media (max-width: 1050px) {
+    #mapa{
+        width: 380px;
+        height: 38  0px;
+    }
+    #logo{
+        height: 50px;
+    }
 }
